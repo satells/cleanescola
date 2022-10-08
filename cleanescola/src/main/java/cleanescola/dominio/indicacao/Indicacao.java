@@ -1,8 +1,8 @@
-package cleanescola.indicacao;
+package cleanescola.dominio.indicacao;
 
 import java.time.LocalDateTime;
 
-import cleanescola.aluno.Aluno;
+import cleanescola.dominio.aluno.Aluno;
 
 public class Indicacao {
 

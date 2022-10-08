@@ -1,4 +1,4 @@
-package cleanescola.aluno;
+package cleanescola.dominio.aluno;
 
 public class Email {
 

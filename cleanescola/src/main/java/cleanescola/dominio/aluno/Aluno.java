@@ -1,4 +1,4 @@
-package cleanescola.aluno;
+package cleanescola.dominio.aluno;
 
 import java.util.ArrayList;
 import java.util.List;

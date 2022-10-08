@@ -1,14 +1,14 @@
-package cleanescola.aluno;
+package cleanescola.dominio.aluno;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import cleanescola.aluno.Aluno;
-import cleanescola.aluno.CPF;
-import cleanescola.aluno.Email;
-import cleanescola.aluno.Telefone;
+import cleanescola.dominio.aluno.Aluno;
+import cleanescola.dominio.aluno.CPF;
+import cleanescola.dominio.aluno.Email;
+import cleanescola.dominio.aluno.Telefone;
 
 class AlunoTest {
 
