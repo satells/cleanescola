@@ -1,7 +1,9 @@
-package cleanescola;
+package cleanescola.aluno;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import cleanescola.aluno.Email;
 
 class EmailTest {
 

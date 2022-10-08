@@ -1,4 +1,4 @@
-package cleanescola;
+package cleanescola.aluno;
 
 public class Email {
 
