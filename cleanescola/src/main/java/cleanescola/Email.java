@@ -2,6 +2,7 @@ package cleanescola;
 
 public class Email {
 
+	// VALUE OBJECT
 	public Email(String endereco) {
 
 		if (endereco == null || !endereco.matches("^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
