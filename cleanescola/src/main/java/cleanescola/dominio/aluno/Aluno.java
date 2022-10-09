@@ -22,16 +22,16 @@ public class Aluno {
 
 	}
 
-	public CPF getCpf() {
-		return cpf;
+	public String getCpf() {
+		return cpf.getNumero();
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public Email getEmail() {
-		return email;
+	public String getEmail() {
+		return email.getEndereco();
 	}
 
 	public void adicionarTelefone(String ddd, String numero) {
@@ -82,6 +82,10 @@ public class Aluno {
 
 		}
 
+	}
+
+	public List<Telefone> getTelefones() {
+		return telefones;
 	}
 
 	public Telefone getTelefone(int index) {

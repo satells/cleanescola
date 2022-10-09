@@ -5,11 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import cleanescola.dominio.aluno.Aluno;
-import cleanescola.dominio.aluno.CPF;
-import cleanescola.dominio.aluno.Email;
-import cleanescola.dominio.aluno.Telefone;
-
 class AlunoTest {
 
 	@Test
@@ -25,8 +20,8 @@ class AlunoTest {
 		aluno.adicionarTelefone(ddd, numero);
 
 		assertEquals(aluno.getNome(), nome);
-		assertEquals(aluno.getCpf().getNumero(), cpf.getNumero());
-		assertEquals(aluno.getEmail().getEndereco(), email.getEndereco());
+		assertEquals(aluno.getCpf(), cpf.getNumero());
+		assertEquals(aluno.getEmail(), email.getEndereco());
 
 		Telefone telefone = aluno.getTelefone(0);
 		assertEquals(telefone.getDdd(), ddd);
