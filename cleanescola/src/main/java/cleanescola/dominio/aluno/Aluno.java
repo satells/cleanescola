@@ -48,8 +48,8 @@ public class Aluno {
 		public AlunoBuilder() {
 		}
 
-		public AlunoBuilder comCpf(CPF cpf) {
-			this.cpf = cpf;
+		public AlunoBuilder comCpf(String cpf) {
+			this.cpf = new CPF(cpf);
 			return this;
 		}
 
@@ -58,8 +58,8 @@ public class Aluno {
 			return this;
 		}
 
-		public AlunoBuilder comEmail(Email email) {
-			this.email = email;
+		public AlunoBuilder comEmail(String email) {
+			this.email = new Email(email);
 			return this;
 		}
 

@@ -59,7 +59,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 
 			String nome = rs.getString("nome");
 			Email email = new Email(rs.getString("email"));
-			Aluno encontrado = new Aluno.AlunoBuilder().comCpf(cpf).comEmail(email).comNome(nome).build();
+			Aluno encontrado = new Aluno.AlunoBuilder().comCpf(cpf.getNumero()).comEmail(email.getEndereco()).comNome(nome).build();
 
 			Long id = rs.getLong("id");
 			sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";
@@ -89,7 +89,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 				CPF cpf = new CPF(rs.getString("cpf"));
 				String nome = rs.getString("nome");
 				Email email = new Email(rs.getString("email"));
-				Aluno aluno = new Aluno.AlunoBuilder().comCpf(cpf).comEmail(email).comNome(nome).build();
+				Aluno aluno = new Aluno.AlunoBuilder().comCpf(cpf.getNumero()).comEmail(email.getEndereco()).comNome(nome).build();
 
 				Long id = rs.getLong("id");
 				sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";

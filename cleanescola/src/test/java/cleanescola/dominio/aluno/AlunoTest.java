@@ -13,7 +13,7 @@ class AlunoTest {
 		CPF cpf = new CPF("08454871080");
 		Email email = new Email("email@email.com");
 		String nome = "Ricardo Mendes";
-		Aluno aluno = new Aluno.AlunoBuilder().comCpf(cpf).comEmail(email).comNome(nome).build();
+		Aluno aluno = new Aluno.AlunoBuilder().comCpf(cpf.getNumero()).comEmail(email.getEndereco()).comNome(nome).build();
 
 		String ddd = "12";
 		String numero = "123456789";
@@ -35,9 +35,9 @@ class AlunoTest {
 		Email email = new Email("email@email.com");
 		String nome = "Ricardo Mendes";
 
-		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(null).comEmail(email).comNome(nome).build());
-		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(cpf).comEmail(null).comNome(nome).build());
-		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(cpf).comEmail(email).comNome(null).build());
+		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(null).comEmail(email.getEndereco()).comNome(nome).build());
+		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(cpf.getNumero()).comEmail(null).comNome(nome).build());
+		Assertions.assertThrows(IllegalArgumentException.class, () -> new Aluno.AlunoBuilder().comCpf(cpf.getNumero()).comEmail(email.getEndereco()).comNome(null).build());
 
 	}
 
